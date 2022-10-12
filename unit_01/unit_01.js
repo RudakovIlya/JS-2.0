@@ -170,6 +170,16 @@ document.querySelector('.b-11').onclick = f11;
 
 function f12() {
 
+	const div = document.createElement('div');
+
+	const out = document.querySelector('.out-12');
+
+	div.textContent = 12;
+
+	div.classList.add('bg-12');
+
+	out.append(div)
+
 }
 
 document.querySelector('.b-12').onclick = f12;
