@@ -152,6 +152,14 @@ for (let i = 0; i < div10.length; i++) {
 
 function f11() {
 
+	const div = document.createElement('div');
+
+	const out = document.querySelector('.out-11');
+
+	div.textContent = 25;
+
+	out.append(div)
+
 }
 
 document.querySelector('.b-11').onclick = f11;
