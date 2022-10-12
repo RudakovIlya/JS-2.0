@@ -320,6 +320,10 @@ document.querySelector('.b-19').onclick = f19;
 
 function f20() {
 
+	const out = document.querySelector('.out-20');
+
+	out.setAttribute('title', 'go')
+
 }
 
 document.querySelector('.b-20').onclick = f20;
