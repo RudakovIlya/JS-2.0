@@ -250,6 +250,14 @@ document.querySelector('.b-15').onclick = f15;
 
 function f16() {
 
+	const div = document.createElement('div');
+
+	const out = document.querySelector('.out-16');
+
+	div.textContent = 16;
+
+	out.after(div)
+
 }
 
 document.querySelector('.b-16').onclick = f16;
