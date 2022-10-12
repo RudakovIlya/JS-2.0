@@ -286,6 +286,12 @@ document.querySelector('.b-17').onclick = f17;
 
 function f18() {
 
+	const p = document.querySelector('.p-18');
+
+	const out = document.querySelector('.out-18');
+
+	out.textContent = p.getAttribute('data-b')
+
 }
 
 document.querySelector('.b-18').onclick = f18;
