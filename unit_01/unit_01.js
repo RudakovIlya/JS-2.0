@@ -20,7 +20,7 @@ function f2() {
 
 	const out = document.querySelector('.out-2');
 
-	out.classList.toggle('bg-2')
+	out.classList.toggle('bg-2');
 
 }
 
@@ -34,7 +34,7 @@ function f3() {
 
 	const out = document.querySelector('.out-3');
 
-	out.classList.remove('bg-3')
+	out.classList.remove('bg-3');
 
 }
 
@@ -48,7 +48,7 @@ function f4() {
 
 	const out = document.querySelector('.out-4');
 
-	out.classList.toggle('bg-4')
+	out.classList.toggle('bg-4');
 
 }
 
@@ -76,7 +76,7 @@ function f6() {
 
 	const out = document.querySelector('.out-6');
 
-	out.textContent = document.querySelectorAll('.p-6').length
+	out.textContent = document.querySelectorAll('.p-6').length;
 
 }
 
@@ -90,7 +90,7 @@ let blocks7 = document.querySelectorAll('.out-7');
 
 function f7() {
 
-	blocks7.forEach(item => item.classList.toggle('bg-7'))
+	blocks7.forEach(item => item.classList.toggle('bg-7'));
 
 }
 
@@ -104,7 +104,7 @@ let blocks8 = document.querySelectorAll('.out-8');
 
 function f8() {
 
-	blocks8.forEach(item => item.classList.toggle('bg-8'))
+	blocks8.forEach(item => item.classList.toggle('bg-8'));
 
 }
 
@@ -115,7 +115,9 @@ document.querySelector('.b-8').onclick = f8;
 // Усложним предыдущие задачи. С помощью цикла повесьте на блоки out-9 событие клик. По клику должна выполняться функция f9. Функция, должна добавлять класс bg-9 тому out-9 на котором кликнули.
 
 function f9() {
-	this.classList.toggle('bg-9')
+
+	this.classList.toggle('bg-9');
+
 }
 
 let div9 = document.querySelectorAll('.out-9');
@@ -128,15 +130,21 @@ for (let i = 0; i < div9.length; i++) {
 //  Task 10
 // Усложним предыдущие задачи. С помощью цикла повесьте на блоки out-10 событие клик. По клику должна выполняться функция f10. Функция, должна делать toggle класса bg-10 тому out-10 на котором кликнули.
 
-//let div10 = тут получите все out-10
+let div10 = document.querySelectorAll('.out-10');
 
 function f10() {
+
+	this.classList.toggle('bg-10')
 
 }
 
 // а тут цикл, похожий на предыдущее задание
 
+for (let i = 0; i < div10.length; i++) {
 
+	div10[i].onclick = f10;
+
+}
 
 //  Task 11
 // Добавьте кнопку .b-11, которая запускает функцию f11. Функция создает через createElement div c текстом 25 и добавляет его через append в out-11.
