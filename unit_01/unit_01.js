@@ -301,6 +301,16 @@ document.querySelector('.b-18').onclick = f18;
 
 function f19() {
 
+	let str = '';
+
+	const out = document.querySelector('.out-19');
+
+	const p = document.querySelectorAll('.p-19');
+
+	p.forEach(item => str += `${item.getAttribute('data-b')} `)
+
+	out.textContent = str.trim();
+
 }
 
 document.querySelector('.b-19').onclick = f19;
