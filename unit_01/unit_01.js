@@ -32,6 +32,10 @@ document.querySelector('.b-2').onclick = f2;
 
 function f3() {
 
+	const out = document.querySelector('.out-3');
+
+	out.classList.remove('bg-3')
+
 }
 
 document.querySelector('.b-3').onclick = f3;
