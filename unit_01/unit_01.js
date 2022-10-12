@@ -267,6 +267,16 @@ document.querySelector('.b-16').onclick = f16;
 
 function f17() {
 
+	const div = document.createElement('div');
+
+	const out = document.querySelector('.out-17');
+
+	div.textContent = 17;
+
+	div.classList.add('bg-17')
+
+	out.replaceWith(div, out)
+
 }
 
 document.querySelector('.b-17').onclick = f17;
