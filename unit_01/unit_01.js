@@ -4,6 +4,11 @@
 
 function f1() {
 
+	const out = document.querySelector('.out-1');
+
+	out.style.width = `${200}px`;
+
+	out.style.height = `${40}px`;
 }
 
 document.querySelector('.b-1').onclick = f1;
