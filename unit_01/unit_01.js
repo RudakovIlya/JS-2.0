@@ -216,6 +216,14 @@ document.querySelector('.b-13').onclick = f13;
 
 function f14() {
 
+	const div = document.createElement('div');
+
+	const out = document.querySelector('.out-14');
+
+	div.textContent = 14;
+
+	out.prepend(div)
+
 }
 
 document.querySelector('.b-14').onclick = f14;
