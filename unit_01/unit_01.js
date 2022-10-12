@@ -189,6 +189,18 @@ document.querySelector('.b-12').onclick = f12;
 
 function f13() {
 
+	const div = document.createElement('div');
+
+	const out = document.querySelector('.out-13');
+
+	div.textContent = 'pushMe';
+
+	div.classList.add('bg-13');
+
+	div.onclick = f13_1;
+
+	out.append(div)
+
 }
 
 function f13_1() {
