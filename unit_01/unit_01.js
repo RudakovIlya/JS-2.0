@@ -60,7 +60,6 @@ document.querySelector('.b-4').onclick = f4;
 
 function f5() {
 
-
 	const out = document.querySelector('.out-5');
 
 	out.textContent = document.querySelector('.out-4').classList.contains('bg-4');
