@@ -18,6 +18,10 @@ document.querySelector('.b-1').onclick = f1;
 
 function f2() {
 
+	const out = document.querySelector('.out-2');
+
+	out.classList.toggle('bg-2')
+
 }
 
 document.querySelector('.b-2').onclick = f2;
