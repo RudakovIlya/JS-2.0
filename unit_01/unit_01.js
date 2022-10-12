@@ -103,7 +103,9 @@ document.querySelector('.b-7').onclick = f7;
 let blocks8 = document.querySelectorAll('.out-8');
 
 function f8() {
-	//внутри цикла blocks8[i].classList....
+
+	blocks8.forEach(item => item.classList.toggle('bg-8'))
+
 }
 
 document.querySelector('.b-8').onclick = f8;
