@@ -107,6 +107,7 @@ document.querySelector('.b-4').onclick = () => {
 
 
 function f5(arr, block) {
+
     let out = '';
 
     for (const key in arr) {
@@ -115,7 +116,7 @@ function f5(arr, block) {
 
     }
 
-    block.innerHTML = out;
+    document.querySelector(block).innerHTML = out;
 
 }
 
