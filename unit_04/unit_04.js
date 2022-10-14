@@ -198,6 +198,23 @@ function f9() {
         [44, -56]
     ];
 
+    const out9 = document.querySelector('.out-9');
+
+    for (let i = 0; i < a9.length; i++) {
+
+        for (let k = 0; k < a9[i].length; k++) {
+
+            if (a9[i][k] > 0) {
+
+                out += `${a9[i][k]} `
+
+            }
+
+        }
+
+    }
+
+    out9.textContent = out;
 
 }
 
