@@ -32,9 +32,9 @@ function f2() {
 
     const out = document.querySelector('.out-2');
 
-    out.textContent = a2.two;
+    out.textContent = a2.five;
 
-    return a2.two
+    return a2.five;
 }
 
 document.querySelector('.b-2').onclick = () => {
@@ -48,6 +48,7 @@ document.querySelector('.b-2').onclick = () => {
 
 
 function f3() {
+
     let a3 = {
         "one": "hello",
         "two": "mahai",
@@ -56,7 +57,12 @@ function f3() {
         "odd": "hi",
         "mix": "mix"
     };
-    // return
+
+    const out = document.querySelector('.out-3');
+
+    out.textContent = `${a3.five} ${a3.odd}`
+
+    return a3.five;
 }
 
 document.querySelector('.b-3').onclick = () => {
