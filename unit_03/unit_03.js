@@ -365,10 +365,17 @@ document.querySelector('.b-18').onclick = f18;
 // Вывод в out-19
 
 let d19 = ['Your', 'payment', 'method', 'will', 'automatically', 'be', 'charged', 'in', 'advance', 'every'];
+
 let maxString = '';
 
 function f19() {
 
+    const out = document.querySelector('.out-19');
+
+
+    out.textContent = d19.sort((a, b) => b.length - a.length)[0];
+
+    out.textContent = d19.reduce((accum, item) => accum.length > item.length ? accum : item, '')
 }
 
 document.querySelector('.b-19').onclick = f19;
