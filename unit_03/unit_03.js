@@ -41,6 +41,8 @@ document.querySelector('.b-2').onclick = f2;
 
 function f3() {
 
+    d1.shift();
+
     showArr('.out-3', d1);
 }
 
