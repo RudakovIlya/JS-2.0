@@ -196,6 +196,7 @@ let ar11 = [2, 3, 4, 5, 6, 7];
 function f11() {
 
     let two = ar11[2];
+
     let four = ar11[4]
 
     ar11[2] = four;
@@ -221,6 +222,15 @@ let ar12 = ['test', 'west', 'list', 'class', 'best'];
 
 function f12() {
 
+    const first = ar12[0];
+
+    ar12[0] = ar12[ar12.length - 1];
+
+    ar12[ar12.length - 1] = first;
+
+    const out = document.querySelector('.out-12');
+
+    out.textContent = ar12.join(' ')
 }
 
 document.querySelector('.b-12').onclick = f12;
