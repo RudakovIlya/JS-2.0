@@ -368,6 +368,19 @@ let ar17 = [3, 0, 2, 6, 0, 1, 3, 1, 9, 0, 2, 0];
 
 function f17() {
 
+    const out = document.querySelector('.out-17');
+
+    let count = 0;
+
+    ar17.forEach(item => {
+
+        if (item > 3) count += 1;
+
+    })
+
+
+    out.textContent = count;
+
 }
 
 document.querySelector('.b-17').onclick = f17;
