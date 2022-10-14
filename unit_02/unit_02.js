@@ -333,6 +333,27 @@ let ar16_even = [];
 
 function f16() {
 
+    const out_odd = document.querySelector('.out-16-odd');
+
+    const out_even = document.querySelector('.out-16-even');
+
+    for (let i = 0; i < ar16.length; i++) {
+
+        if (ar16[i] % 2 === 0) {
+
+            ar16_even.push(ar16[i])
+
+        } else {
+
+            ar16_odd.push(ar16[i])
+
+        }
+
+    }
+
+    out_even.textContent = ar16_even.join(' ');
+
+    out_odd.textContent = ar16_odd.join(' ');
 }
 
 document.querySelector('.b-16').onclick = f16;
