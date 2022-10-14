@@ -207,6 +207,16 @@ let d12 = [6, 62, 60, 70, 1, 5];
 
 function f12() {
 
+    const out = document.querySelector('.out-12');
+
+    const iq = +document.querySelector('.i-12').value;
+
+    for (let i = 0; i < d12.length; i++) {
+
+        d12[i] === iq ? out.textContent = i : -1
+
+    }
+
 }
 
 document.querySelector('.b-12').onclick = f12;
