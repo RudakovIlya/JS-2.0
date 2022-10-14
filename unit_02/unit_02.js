@@ -86,9 +86,14 @@ document.querySelector('.b-5').onclick = f5;
 // Вывод - по нажатию кнопки b-6
 // Вывод в out-6
 
-// let ar6 =
+let ar6 = ['Ilya', 'Deva', 5, 9]
 
 function f6() {
+
+    const out = document.querySelector('.out-6');
+
+    out.textContent = ar6.join(' ');
+
 }
 
 document.querySelector('.b-6').onclick = f6;
