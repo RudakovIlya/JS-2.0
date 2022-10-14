@@ -29,6 +29,8 @@ document.querySelector('.b-1').onclick = f1;
 function f2() {
 
     showArr('.out-2', d1);
+
+    return d1.pop();
 }
 
 document.querySelector('.b-2').onclick = f2;
