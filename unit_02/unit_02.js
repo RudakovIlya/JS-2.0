@@ -1,10 +1,10 @@
 // Task 1
 //Создайте массив ar1 содержащий строки, числа, булевы значения. Выведите его в .out-1. Вывод - по нажатию кнопки b-1
 
-// let ar1 = // переменную обьявляем здесь!!!!
+let ar1 = ['Ilya', 24, true];
 
 function f1() {
-    //ваш_элемент.innerHTML = ar1; // да так можно выводить!!!!
+    document.querySelector('.out-1').innerHTML = ar1.join('_+_');
 }
 
 document.querySelector('.b-1').onclick = f1;
