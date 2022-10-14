@@ -151,6 +151,8 @@ let d9 = [100, 200, 300, 400, 700, 121];
 
 function f9() {
 
+    d9.splice(0, 1);
+
     showArr('.out-9', d9);
 }
 
