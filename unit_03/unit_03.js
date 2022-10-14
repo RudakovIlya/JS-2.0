@@ -75,6 +75,7 @@ function f5() {
     d1.unshift(i);
 
     showArr('.out-5', d1);
+
 }
 
 document.querySelector('.b-5').onclick = f5;
