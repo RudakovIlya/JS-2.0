@@ -400,6 +400,10 @@ let a14 = [
 
 function f14() {
 
+    const out = document.querySelector('.out-14');
+
+    out.textContent = a14.map(item => item.length).join(' ');
+
 }
 
 document.querySelector('.b-14').onclick = f14;
