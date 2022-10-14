@@ -3,13 +3,16 @@
 // Первая задача дана в качестве примера.
 
 function f1() {
+
     let a1 = {
         "one": 15,
         "two": 16,
         "five": 20
     };
+
     document.querySelector('.out-1').innerHTML = a1.two;
-    //return ...
+
+    return a1.two;
 }
 
 document.querySelector('.b-1').onclick = f1;
