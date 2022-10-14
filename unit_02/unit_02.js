@@ -396,6 +396,10 @@ let ar18 = [15, 24, 13, 78, 21, 4, 45, 67];
 
 function f18() {
 
+    const out = document.querySelector('.out-18');
+
+    out.textContent = Math.max(...ar18)
+
 }
 
 document.querySelector('.b-18').onclick = f18;
