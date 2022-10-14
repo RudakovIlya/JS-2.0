@@ -312,8 +312,6 @@ function f16() {
 
     d16 = d16.concat(d161, d162)
 
-    console.log(d16);
-
     showArr('.out-16', d16);
 }
 
@@ -330,6 +328,8 @@ let d171 = ['a', 'b', 'c', 'd'];
 let d172 = [1, 2, 3, 4, 5];
 
 function f17() {
+
+    d17 = [...d171, ...d172];
 
     showArr('.out-17', d17);
 }
