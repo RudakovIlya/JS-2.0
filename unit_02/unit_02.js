@@ -299,6 +299,24 @@ let ar15 = [0, 2, 5, -4, 6, 22, -9, -12, 8, 12, 13, 78];
 
 function f15() {
 
+    const out = document.querySelector('.out-15');
+
+    let str = '';
+
+    for (let i = 0; i < ar15.length; i++) {
+
+        if (ar15[i] > 0) {
+
+            str += `${ar15[i]} `
+
+        }
+
+    }
+
+    out.textContent = str;
+
+    out.textContent = ar15.filter(item => item > 0).join(' ')
+
 }
 
 document.querySelector('.b-15').onclick = f15;
