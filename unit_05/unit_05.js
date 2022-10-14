@@ -23,13 +23,18 @@ document.querySelector('.b-1').onclick = f1;
 
 
 function f2() {
+
     let a2 = {
         "one": "hello",
         "two": "mahai",
         "five": "hi"
     };
 
-    // return
+    const out = document.querySelector('.out-2');
+
+    out.textContent = a2.two;
+
+    return a2.two
 }
 
 document.querySelector('.b-2').onclick = () => {
