@@ -107,6 +107,17 @@ document.querySelector('.b-6').onclick = f6;
 let ar7 = ['china', 'india', 'brazil', 'japan', 'egypt'];
 
 function f7() {
+
+    ar7[5] = 'italy';
+
+    ar7[6] = 'turkey';
+
+    ar7[7] = 'vietnam';
+
+    const out = document.querySelector('.out-7');
+
+    out.innerHTML = ar7.join(' ');
+
 }
 
 document.querySelector('.b-7').onclick = f7;
