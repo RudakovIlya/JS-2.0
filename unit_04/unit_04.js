@@ -89,7 +89,9 @@ function f5() {
 
         }
     }
+
     document.querySelector('.out-5').innerHTML = out;
+
 }
 
 document.querySelector('.b-5').onclick = f5;
@@ -99,8 +101,21 @@ document.querySelector('.b-5').onclick = f5;
 // При нажатии b-6 выполняете функцию f6. Функция должна вывести в out-6 нечетные значения из массива a6. Для перебора используем цикл. Делаем по образу предыдущей задачи.
 
 function f6() {
+
     let out = '';
+
     let a6 = [[1, 2], [3, 4], [5, 6], [21, 34], [44, 56]];
+
+    const out6 = document.querySelector('.out-6');
+
+    for (let i = 0; i < a6.length; i++) {
+
+        if (a6[i][0] % 2 !== 0) out += `${a6[i][0]} `
+        if (a6[i][1] % 2 !== 0) out += `${a6[i][1]} `
+
+    }
+
+    out6.textContent = out;
 
 }
 
