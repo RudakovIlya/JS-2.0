@@ -56,7 +56,11 @@ document.querySelector('.b-3').onclick = f3;
 function f4() {
     let a4 = [[1, 2, 3], 'go', [3, 4, 5], [6, [7, 'my']]];
 
-    // return
+    const out = document.querySelector('.out-4');
+
+    out.textContent = a4[1];
+
+    return a4[1];
 }
 
 document.querySelector('.b-4').onclick = f4;
