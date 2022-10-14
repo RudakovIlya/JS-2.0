@@ -126,6 +126,7 @@ document.querySelector('.b-6').onclick = f6;
 
 function f7() {
     let out = '';
+
     let a7 = [
         [1, 2, 3, 9],
         [3, 4, 7],
@@ -133,11 +134,17 @@ function f7() {
         [21, 34, 43],
         [44, 56]
     ];
+
     for (let i = 0; i < a7.length; i++) {
+
         for (let k = 0; k < a7[i].length; k++) {
+
             if (a7[i][k] % 2 == 0) out += a7[i][k] + ' ';
+
         }
+
     }
+
     document.querySelector('.out-7').innerHTML = out;
 
 }
