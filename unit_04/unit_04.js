@@ -22,7 +22,11 @@ document.querySelector('.b-1').onclick = f1;
 function f2() {
     let a2 = [[12, 'hi'], [45, 87], [55, 13]];
 
-    // return
+    const out = document.querySelector('.out-2');
+
+    out.textContent = a2[0][1];
+
+    return a2[0][1];
 }
 
 document.querySelector('.b-2').onclick = f2;
