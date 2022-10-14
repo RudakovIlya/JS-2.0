@@ -281,6 +281,17 @@ let d15 = [0, 2, 5, -4, 6, 22, -9, -12, 8, 12, 13, 78];
 
 function f15() {
 
+    const iq = +document.querySelector('.i-15').value;
+
+    for (let i = 0; i < d15.length; i++) {
+
+        if (d15.indexOf(iq) === -1) {
+
+            d15.push(iq)
+
+        }
+
+    }
 
     showArr('.out-15', d15);
 }
