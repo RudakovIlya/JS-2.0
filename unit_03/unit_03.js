@@ -109,6 +109,8 @@ let d7 = ['china', 'india', 'brazil', 'japan', 'egypt'];
 
 function f7() {
 
+    d7.length = d7.length - 1;
+
     showArr('.out-7', d7);
 }
 
