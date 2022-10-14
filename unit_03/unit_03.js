@@ -232,6 +232,16 @@ let d13 = [6, 0, 22, 1, 4, 76];
 
 function f13() {
 
+    const reverseArray = [];
+
+    for (let i = 0; i < d13.length; i++) {
+
+        reverseArray[i] = d13[d13.length - i - 1]
+
+    }
+
+    d13 = reverseArray;
+
     showArr('.out-13', d13);
 }
 
