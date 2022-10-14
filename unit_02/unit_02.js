@@ -248,6 +248,16 @@ let ar13 = ['test', 'west', 'list', 'class', 'best'];
 
 function f13() {
 
+    const out = document.querySelector('.out-13');
+
+    let str = '';
+
+    ar13.forEach((item, i) => {
+        str += `${i}: ${item}; `
+    })
+
+    out.textContent = str;
+
 }
 
 document.querySelector('.b-13').onclick = f13;
