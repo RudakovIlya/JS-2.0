@@ -126,6 +126,16 @@ let d8 = [2, '4', 12, 67, 'hello'];
 
 function f8() {
 
+    const i = document.querySelector('.i-8').value;
+
+    for (let i = d8.length; i > 0; i--) {
+
+        d8[i] = d8[i - 1]
+
+    }
+
+    d8[0] = i;
+
     showArr('.out-8', d8);
 }
 
