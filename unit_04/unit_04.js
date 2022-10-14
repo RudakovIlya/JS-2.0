@@ -422,6 +422,10 @@ let a15 = [
 
 function f15() {
 
+    const out = document.querySelector('.out-15');
+
+    out.textContent = Math.max(...a15.map(item => item.length))
+
 }
 
 document.querySelector('.b-15').onclick = f15;
