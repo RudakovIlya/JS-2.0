@@ -90,6 +90,10 @@ let d6 = ['test', 5, 12];
 
 function f6() {
 
+    const i = document.querySelector('.i-6').value;
+
+    d6[d6.length] = i;
+
     showArr('.out-6', d6);
 }
 
