@@ -397,6 +397,10 @@ let d20 = [4, 5, 6, 7, 8, 9, 10];
 
 function f20() {
 
+    const out = document.querySelector('.out-20');
+
+    out.textContent = d20.join('')
+
 }
 
 document.querySelector('.b-20').onclick = f20;
