@@ -68,9 +68,14 @@ document.querySelector('.b-4').onclick = f4;
 // Вывод в out-5
 // Тест допустим массив [1,2,3,4,5,6,7,8,9,10] вывод: 8
 
-// let ar5 =
+let ar5 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 function f5() {
+
+    const out = document.querySelector('.out-5');
+
+    out.innerHTML = ar5[0] + ar5[2] + ar5[3];
+
 }
 
 document.querySelector('.b-5').onclick = f5;
