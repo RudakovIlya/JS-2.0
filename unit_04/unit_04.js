@@ -232,6 +232,25 @@ function f10() {
         ['st', 21, -34, -43],
         [44, -56, 'task']
     ];
+
+    const out10 = document.querySelector('.out-10');
+
+    for (let i = 0; i < a10.length; i++) {
+
+        for (let k = 0; k < a10[i].length; k++) {
+
+            if (typeof a10[i][k] === 'string') {
+
+                out += `${a10[i][k]} `
+
+            }
+
+        }
+
+    }
+
+    out10.textContent = out;
+
 }
 
 document.querySelector('.b-10').onclick = f10;
