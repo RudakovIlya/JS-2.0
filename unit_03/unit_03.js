@@ -258,6 +258,14 @@ let d14 = [];
 
 function f14() {
 
+    const iq = +document.querySelector('.i-14').value;
+
+    for (let i = 0; i < iq; i++) {
+
+        d14.push(1)
+
+    }
+
     showArr('.out-14', d14);
 }
 
