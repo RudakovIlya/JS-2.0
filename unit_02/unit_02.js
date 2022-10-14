@@ -415,6 +415,10 @@ let ar19 = [15, 424, 313, 78, 241, 4, 45, 67];
 
 function f19() {
 
+    const out = document.querySelector('.out-19');
+
+    out.textContent = Math.min(...ar19)
+
 }
 
 document.querySelector('.b-19').onclick = f19;
