@@ -310,6 +310,10 @@ let d162 = [23, 24, 56, 87];
 
 function f16() {
 
+    d16 = d16.concat(d161, d162)
+
+    console.log(d16);
+
     showArr('.out-16', d16);
 }
 
