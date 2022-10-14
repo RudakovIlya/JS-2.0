@@ -186,6 +186,12 @@ let d11 = [2, 3, 4, 5, 6, 7];
 
 function f11() {
 
+    const i = +document.querySelector('.i-11').value;
+
+    const out = document.querySelector('.out-11');
+
+    out.textContent = d11.indexOf(i);
+
 }
 
 document.querySelector('.b-11').onclick = f11;
