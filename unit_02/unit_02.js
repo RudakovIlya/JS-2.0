@@ -195,6 +195,17 @@ let ar11 = [2, 3, 4, 5, 6, 7];
 
 function f11() {
 
+    let two = ar11[2];
+    let four = ar11[4]
+
+    ar11[2] = four;
+
+    ar11[4] = two;
+
+    const out = document.querySelector('.out-11');
+
+    out.innerHTML = ar11.join(' ')
+
 }
 
 document.querySelector('.b-11').onclick = f11;
