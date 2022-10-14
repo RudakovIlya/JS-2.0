@@ -347,6 +347,12 @@ let d18 = ['b', 'c', '45', 'e', 'z', 'y'];
 
 function f18() {
 
+    const iq = document.querySelector('.i-18').value;
+
+    const out = document.querySelector('.out-18');
+
+    out.textContent = d18.includes(iq);
+
 }
 
 document.querySelector('.b-18').onclick = f18;
