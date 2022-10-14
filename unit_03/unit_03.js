@@ -372,10 +372,17 @@ function f19() {
 
     const out = document.querySelector('.out-19');
 
+    for (let i = 0; i < d19.length; i++) {
+
+        if (maxString.length < d19[i].length) maxString = d19[i];
+
+    }
+
+    out.textContent = maxString;
 
     out.textContent = d19.sort((a, b) => b.length - a.length)[0];
 
-    out.textContent = d19.reduce((accum, item) => accum.length > item.length ? accum : item, '')
+    out.textContent = d19.reduce((accum, item) => accum.length > item.length ? accum : item, '');
 }
 
 document.querySelector('.b-19').onclick = f19;
