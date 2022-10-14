@@ -70,6 +70,10 @@ document.querySelector('.b-4').onclick = f4;
 
 function f5() {
 
+    const i = document.querySelector('.i-5').value;
+
+    d1.unshift(i);
+
     showArr('.out-5', d1);
 }
 
