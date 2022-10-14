@@ -273,6 +273,18 @@ let ar14 = [1, 2, 3, 'hello', 66];
 
 function f14() {
 
+    const out = document.querySelector('.out-14');
+
+    let str = '';
+
+    for (let i = ar14.length - 1; i >= 0; i--) {
+
+        str += `${ar14[i]} `
+
+    }
+
+    out.textContent = str;
+
 }
 
 document.querySelector('.b-14').onclick = f14;
