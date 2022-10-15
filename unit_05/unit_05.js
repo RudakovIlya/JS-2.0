@@ -427,6 +427,10 @@ let a16 = {
 
 function f16() {
 
+    const out = document.querySelector('.out-16');
+
+    out.textContent = Object.values(a16).map(item => item.name).join(' ');
+
 }
 
 document.querySelector('.b-16').onclick = f16;
