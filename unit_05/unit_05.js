@@ -141,6 +141,14 @@ let a6 = {
 
 function f6() {
 
+    const iq = document.querySelector('.i-61').value;
+
+    const iq2 = document.querySelector('.i-62').value;
+
+    a6[iq] = iq2;
+
+    f5(a6, '.out-6');
+
 }
 
 document.querySelector('.b-6').onclick = f6;
