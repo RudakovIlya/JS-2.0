@@ -24,19 +24,34 @@
 
             <div class="package featured">
 
-                <input style="text-align: center;" type="text" class="package-name" placeholder="Enter city">
+                <input value="moscow" style="text-align: center;" type="text" class="package-name city"
+                    placeholder="Enter city">
 
                 <hr>
 
-                <p class="price temperature">10&deg;</p>
+                <p style="margin:10px 0;" class="package-name">Country: <span class="country"></span></p>
 
-                <p class="disclaimer clouds">Clouds</p>
+                <hr>
+
+                <p class="price temperature"></p>
+
+                <div style="display: flex; align-items:center; column-gap:10px; justify-content: center;margin-bottom:15px;"
+                    class="weather">
+
+                    <span class="disclaimer clouds"></span>
+
+                    <span class="weather-icon"></span>
+
+                </div>
 
                 <hr>
 
                 <ul class="features">
+
                     <li>Wind-speed: <span class="wind"></span></li>
+
                     <li>Humidity: <span class="humidity"></span></li>
+
                 </ul>
 
                 <button class="button-primary">Go</button>

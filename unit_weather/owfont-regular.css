@@ -16,7 +16,7 @@
 .owf {
   display: inline-block;
   font: normal normal normal 14px/1 owfont;
-  font-size: inherit;
+  font-size: 32px;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
