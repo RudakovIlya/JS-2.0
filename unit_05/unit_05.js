@@ -282,6 +282,13 @@ let a11 = {
 };
 
 function f11() {
+
+    const iq = document.querySelector('.i-11').value;
+
+    delete a11[iq];
+
+    f5(a11, '.out-11');
+
 }
 
 document.querySelector('.b-11').onclick = f11;
