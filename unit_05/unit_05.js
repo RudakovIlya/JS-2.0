@@ -497,6 +497,26 @@ let a19 = {
 
 function f19() {
 
+    const iq = document.querySelector('.i-19').value.toLowerCase();
+
+    const out = document.querySelector('.out-19');
+
+    for (const key in a19) {
+
+        for (item of a19[key]) {
+
+            if (item.toLowerCase() == iq || item == iq) {
+
+                out.textContent = key;
+
+                break;
+
+            }
+
+        }
+
+    }
+
 }
 
 document.querySelector('.b-19').onclick = f19;
