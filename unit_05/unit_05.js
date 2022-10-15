@@ -456,6 +456,10 @@ let a17 = {
 
 function f17() {
 
+    const out = document.querySelector('.out-17');
+
+    out.textContent = Object.values(a17).map(item => item.age).find(item => item > 30);
+
 }
 
 document.querySelector('.b-17').onclick = f17;
