@@ -39,8 +39,6 @@ async function getWeather() {
 
 	humidity.textContent = `${Math.round(data.main.humidity)}%`
 
-	console.log(data);
-
 	localStorage.setItem("city", city.value);
 }
 
