@@ -7,32 +7,44 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://unpkg.com/mustard-ui@latest/dist/css/mustard-ui.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="owfont-regular.css">
     <title>Document</title>
 </head>
 
 <body>
     <div class="container">
+
         <div class="row">
             <div class="col col-lg-12 text-center">
                 <h1>Получаем прогноз погоды по API</h1>
-                <h2>JavaScript v2.0. Урок 14</h2>
-                <h3>js2.itgid.info</h3>
             </div>
         </div>
 
-        <div class="pricing-table row">
+        <div class="pricing-table row" style="justify-content: center;">
+
             <div class="package featured">
-                <p class="package-name">Kiev</p>
+
+                <input style="text-align: center;" type="text" class="package-name" placeholder="Enter city">
+
                 <hr>
-                <p class="price">10&deg;</p>
-                <p class="disclaimer">Clouds</p>
+
+                <p class="price temperature">10&deg;</p>
+
+                <p class="disclaimer clouds">Clouds</p>
+
                 <hr>
+
                 <ul class="features">
-                    <li>Feature 1</li>
+                    <li>Wind-speed: <span class="wind"></span></li>
+                    <li>Humidity: <span class="humidity"></span></li>
                 </ul>
+
                 <button class="button-primary">Go</button>
+
             </div>
+
         </div>
+
 
     </div>
     <script src="script.js"></script>
