@@ -336,6 +336,20 @@ let a13 = {
 
 function f13() {
 
+    const out = document.querySelector('.out-13');
+
+    let sum = 0;
+
+    for (const key in a13) {
+
+        if (typeof a13[key] === 'number') sum += a13[key]
+
+    }
+
+    out.textContent = sum;
+
+    return sum;
+
 }
 
 document.querySelector('.b-13').onclick = f13;
