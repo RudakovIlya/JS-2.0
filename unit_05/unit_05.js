@@ -306,6 +306,20 @@ let a12 = {
 
 function f12() {
 
+    const iq = +document.querySelector('.i-12').value;
+
+    for (let k in a12) {
+
+        if (a12[k] == iq) {
+
+            delete a12[k]
+
+        }
+
+    }
+
+    f5(a12, '.out-12');
+
 }
 
 document.querySelector('.b-12').onclick = f12;
