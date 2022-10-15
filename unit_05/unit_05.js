@@ -207,6 +207,24 @@ let a9 = {
 
 function f9() {
 
+    const out = document.querySelector('.out-9');
+
+    const iq = +document.querySelector('.i-9').value;
+
+    let str = '';
+
+    for (const key in a9) {
+
+        if (a9[key] === iq) {
+
+            str += `${key} `
+
+        }
+
+    }
+
+    out.textContent = str;
+
 }
 
 document.querySelector('.b-9').onclick = f9;
