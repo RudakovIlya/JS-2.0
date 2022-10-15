@@ -184,6 +184,12 @@ let a8 = {
 
 function f8() {
 
+    const iq = document.querySelector('.i-8').value;
+
+    const out = document.querySelector('.out-8');
+
+    out.textContent = a8.hasOwnProperty(iq) ? a8[iq] : 0;
+
 }
 
 document.querySelector('.b-8').onclick = f8;
