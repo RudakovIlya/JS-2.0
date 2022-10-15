@@ -399,6 +399,11 @@ let a15 = {
 
 function f15() {
 
+    const out = document.querySelector('.out-15');
+
+    out.textContent = Object.values(a15).reduce((accum, item) => accum.concat(item)).join(' ');
+
+
 }
 
 document.querySelector('.b-15').onclick = f15;
