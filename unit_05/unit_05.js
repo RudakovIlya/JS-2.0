@@ -532,6 +532,26 @@ let a20 = {
 
 function f20() {
 
+    const out = document.querySelector('.out-20');
+
+    let str = '';
+
+    for (const key in a20) {
+
+        for (const elem of a20[key]) {
+
+            if (elem[1] == 2) {
+
+                str += elem[0] + ' ';
+
+            }
+
+        }
+
+    }
+
+    out.textContent = str;
+
 }
 
 document.querySelector('.b-20').onclick = f20
