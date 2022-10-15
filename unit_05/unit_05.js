@@ -403,7 +403,6 @@ function f15() {
 
     out.textContent = Object.values(a15).reduce((accum, item) => accum.concat(item)).join(' ');
 
-
 }
 
 document.querySelector('.b-15').onclick = f15;
