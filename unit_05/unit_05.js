@@ -164,6 +164,12 @@ let a7 = {
 
 function f7() {
 
+    const iq = document.querySelector('.i-7').value;
+
+    const out = document.querySelector('.out-7');
+
+    out.textContent = a7.hasOwnProperty(iq) ? 1 : 0;
+
 }
 
 document.querySelector('.b-7').onclick = f7;
