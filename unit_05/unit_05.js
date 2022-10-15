@@ -234,8 +234,30 @@ document.querySelector('.b-9').onclick = f9;
 
 function f10(arr, val) {
 
-    //return true;
-    //return false;
+    let result;
+
+    for (const key in arr) {
+
+        if (arr[key] === val) {
+
+            result = true;
+
+            break;
+
+        }
+
+        else {
+
+            result = false;
+
+            break;
+
+        }
+
+    }
+
+    return result;
+
 }
 
 document.querySelector('.b-10').onclick = () => {
@@ -244,7 +266,7 @@ document.querySelector('.b-10').onclick = () => {
         "d": 54,
         "m": 22,
     }
-    document.querySelector('.out-10').innerHTML = f10(a10, 22);
+    document.querySelector('.out-10').innerHTML = f10(a10, 54);
 };
 
 
