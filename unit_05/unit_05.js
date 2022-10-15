@@ -367,6 +367,20 @@ let a14 = {
 
 function f14() {
 
+    const out = document.querySelector('.out-14');
+
+    let str = '';
+
+    for (const key in a14) {
+
+        str += `${a14[key][0]} `
+
+    }
+
+    out.textContent = str;
+
+    return str;
+
 }
 
 document.querySelector('.b-14').onclick = f14;
