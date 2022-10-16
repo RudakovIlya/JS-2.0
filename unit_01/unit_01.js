@@ -6,7 +6,7 @@ function f1() {
 
 	const out = document.querySelector('.out-1');
 
-	out.style.width = `${200}px`;
+	out.style.width = `${500}px`;
 
 	out.style.height = `${40}px`;
 }
