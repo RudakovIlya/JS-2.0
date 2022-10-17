@@ -237,6 +237,18 @@ let a12 = [4, 5, 6, 7];
 
 function f12() {
 
+    let str = '';
+
+    const out = document.querySelector('.out-12');
+
+    for (const elem of a12) {
+
+        str += `${elem} `
+
+    }
+
+    out.textContent = str;
+
 }
 
 document.querySelector('.b-12').addEventListener('click', f12);
