@@ -66,6 +66,14 @@ document.querySelector('.b-3').addEventListener('click', f3);
 
 function f4() {
 
+    const out = document.querySelectorAll('.out-4');
+
+    for (const elem of out) {
+
+        elem.textContent += 4;
+
+    }
+
 }
 
 document.querySelector('.b-4').addEventListener('click', f4);
