@@ -28,6 +28,17 @@ let a2 = [5, 7, 9, 11, 13, 15];
 
 function f2() {
 
+    const out = document.querySelector('.out-2');
+
+    let str = '';
+
+    for (let i = 0; i < a2.length; i++) {
+
+        str += `index: ${i}, value: ${a2[i]} <br>`
+
+    }
+
+    out.innerHTML = str;
 }
 
 document.querySelector('.b-2').addEventListener('click', f2);
@@ -36,6 +47,14 @@ document.querySelector('.b-2').addEventListener('click', f2);
 //При нажатии .b-3 выполняете функцию f3. Функция получает div.out-3 со страницы с помощью getElementsByClassName и в каждый записывает число 3, перезаписывая содержимое div.
 
 function f3() {
+
+    const out = document.getElementsByClassName('out-3');
+
+    for (const elem of out) {
+
+        elem.textContent = 3;
+
+    }
 
 }
 
