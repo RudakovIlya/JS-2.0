@@ -286,6 +286,14 @@ let a14 = new Set([4, 5, 6]);
 
 function f14() {
 
+    const out = document.querySelector('.out-14');
+
+    for (const item of a14) {
+
+        out.textContent += item + ' ';
+
+    }
+
 }
 
 document.querySelector('.b-14').addEventListener('click', f14);
