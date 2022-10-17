@@ -167,6 +167,8 @@ let a9 = [[4, 3, 2], [2, 5], [0, 0, 0, 0, 0]];
 
 function f9() {
 
+    return Math.max(...a9.map(item => item.length - 1))
+
 }
 
 document.querySelector('.b-9').addEventListener('click', () => {
