@@ -152,6 +152,8 @@ let a8 = [{ id: 23, name: 'Ivan' }, { id: 45, name: 'Petr' }];
 
 function f8() {
 
+    return a8.map(item => item.id)
+
 }
 
 document.querySelector('.b-8').addEventListener('click', () => {
