@@ -182,6 +182,18 @@ document.querySelector(".b-10").onclick = () => {
 // Да, эта задача решена! Просто разберитесь.
 
 const f11 = () => {
+  let s = new Set();
+  s.add([1]);
+  s.add([1]);
+
+  const ar1 = [5];
+
+  const ar2 = ar1;
+
+  s.add(ar1);
+  s.add(ar2);
+
+  console.log(s);
 };
 
 document.querySelector(".b-11").onclick = f11;
