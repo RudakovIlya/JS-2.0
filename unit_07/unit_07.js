@@ -210,6 +210,22 @@ let a11 = {
 
 function f11() {
 
+    let str = '';
+
+    const out = document.querySelector('.out-11');
+
+    for (const key in a11) {
+
+        if (a11[key] > 10) {
+
+            str += `${a11[key]} `
+
+        }
+
+    }
+
+    out.textContent = str;
+
 }
 
 document.querySelector('.b-11').addEventListener('click', f11);
