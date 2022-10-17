@@ -182,6 +182,16 @@ let a10 = [4, 6, 9, 'Hello'];
 
 function f10() {
 
+    const newObj = {};
+
+    for (const elem of a10) {
+
+        newObj[elem] = elem
+
+    }
+
+    return newObj;
+
 }
 
 document.querySelector('.b-10').addEventListener('click', () => {
