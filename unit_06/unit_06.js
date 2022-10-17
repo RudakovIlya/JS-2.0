@@ -227,6 +227,33 @@ let str13 =
   "The name conjures up visions of plum pudding and Christmas punch quaint coaching inns and cozy firesides but also of orphaned and starving children";
 
 const f13 = () => {
+
+  const newArr = str13.split('');
+
+  const newSet = new Set(newArr);
+
+  const newObj = {};
+
+  for (const key of newSet) {
+
+    let count = 0;
+
+    for (let i = 0; i < newArr.length; i++) {
+
+      if (key == newArr[i]) {
+
+        count++;
+
+        newObj[key] = count;
+
+      }
+
+    }
+
+  }
+  console.log(newSet);
+  console.log(newArr);
+  return newObj
 };
 
 document.querySelector(".b-13").onclick = () => {
