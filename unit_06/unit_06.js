@@ -93,6 +93,10 @@ let a6 = [
 
 const f6 = () => {
 
+  const out = document.querySelector('.out-6');
+
+  out.textContent = new Set(a6).size;
+
 };
 
 document.querySelector(".b-6").onclick = f6;
