@@ -48,6 +48,7 @@ document.querySelector('.b-2').addEventListener('click', f2);
 
 function f3() {
 
+
     const out = document.getElementsByClassName('out-3');
 
     for (const elem of out) {
