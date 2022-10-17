@@ -205,6 +205,13 @@ let str12 =
   "The name conjures up visions of plum pudding and Christmas punch quaint coaching inns and cozy firesides but also of orphaned and starving children";
 
 const f12 = () => {
+
+  const str = str12.split('');
+
+  const set = new Set(str);
+
+  return set
+
 };
 
 document.querySelector(".b-12").onclick = () => {
