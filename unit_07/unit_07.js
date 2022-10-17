@@ -261,6 +261,18 @@ let a13 = 'testone';
 
 function f13() {
 
+    const out = document.querySelector('.out-13');
+
+    let str = '';
+
+    for (const elem of a13) {
+
+        str += `${elem} `
+
+    }
+
+    out.textContent = str;
+
 }
 
 document.querySelector('.b-13').addEventListener('click', f13);
