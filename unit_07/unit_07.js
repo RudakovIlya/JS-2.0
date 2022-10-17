@@ -304,6 +304,14 @@ document.querySelector('.b-14').addEventListener('click', f14);
 
 function f15() {
 
+    const outs = document.querySelectorAll('.out-15');
+
+    for (const item of outs) {
+
+        item.textContent = 15;
+
+    }
+
 }
 
 document.querySelector('.b-15').addEventListener('click', f15);
