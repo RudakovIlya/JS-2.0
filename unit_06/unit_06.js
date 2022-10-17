@@ -106,6 +106,12 @@ document.querySelector(".b-6").onclick = f6;
 
 const f7 = () => {
 
+  const iq = document.querySelector('.i-7').value;
+
+  const out = document.querySelector('.out-7');
+
+  out.textContent = iq.length == new Set(iq).size && iq.length > 6 ? 1 : 0;
+
 };
 
 document.querySelector(".b-7").onclick = f7;
