@@ -58,6 +58,12 @@ let s4 = new Set(["a", "b", "c", "z"]);
 
 const f4 = () => {
 
+  const out = document.querySelector('.out-4');
+
+  const iq = document.querySelector('.i-4').value;
+
+  out.textContent = s4.has(iq)
+
 };
 
 document.querySelector(".b-4").onclick = f4;
