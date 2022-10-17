@@ -112,6 +112,12 @@ let a6 = [[1, 2], [3, 4], [5, 6]];
 
 function f6() {
 
+    const out = document.querySelector('.out-6');
+
+    const arr = a6.flat()
+
+    out.textContent = arr.join(' ');
+
 }
 
 document.querySelector('.b-6').addEventListener('click', f6);
