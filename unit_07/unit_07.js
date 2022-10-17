@@ -1,9 +1,21 @@
 // Task 1
 //При нажатии .b-1 выполняете функцию f1. Функция перебирает массив a1  c помощью цикла for (let i. Выведите на страницу в .out-1 формате значение+пробел.
 
-let a1 = [5,7,9, 11, 13, 15];
+let a1 = [5, 7, 9, 11, 13, 15];
 
 function f1() {
+
+    const out = document.querySelector('.out-1');
+
+    let str = '';
+
+    for (let i = 0; i < a1.length; i++) {
+
+        str += `${a1[i]} `
+
+    }
+
+    out.textContent = str;
 
 }
 
@@ -12,7 +24,7 @@ document.querySelector('.b-1').addEventListener('click', f1);
 // Task 2
 //При нажатии .b-2 выполняете функцию f2. Функция перебирает массив a2  c помощью цикла for (let i. Выведите на страницу в .out-2 формате индекс+пробел+значение+пробел.
 
-let a2 = [5,7,9, 11, 13, 15];
+let a2 = [5, 7, 9, 11, 13, 15];
 
 function f2() {
 
@@ -42,20 +54,20 @@ document.querySelector('.b-4').addEventListener('click', f4);
 // Task 5
 //При нажатии .b-5 выполняете функцию f5. Функция должна с помощью for of перебрать массив a5 и возвратить новый массив куда входят элементы из a5 большие 7.
 
-let a5 = [3,4,5,2,1,7,8,2,4,6,8,11,23,17];
+let a5 = [3, 4, 5, 2, 1, 7, 8, 2, 4, 6, 8, 11, 23, 17];
 
 function f5() {
 
 }
 
-document.querySelector('.b-5').addEventListener('click', ()=> {
+document.querySelector('.b-5').addEventListener('click', () => {
     document.querySelector('.out-5').innerHTML = f5();
 });
 
 // Task 6
 //При нажатии .b-6 выполняете функцию f6. Функция должна превратить массив a6 в одномерный. Результат вывести в out-6 через пробел.
 
-let a6 = [[1,2], [3,4], [5,6]];
+let a6 = [[1, 2], [3, 4], [5, 6]];
 
 function f6() {
 
@@ -66,13 +78,13 @@ document.querySelector('.b-6').addEventListener('click', f6);
 // Task 7
 //При нажатии .b-7 выполняете функцию f7. Функция должна переиндексировать массив a7. Что имеется ввиду. Сейчас у нас обычный массив, который содержит вложенные объекты. Вам необходимо сделать из a7 объект, где ключи - значения id из вложенных массивов, а значения - имя (т.е { 23 : Ivan, 45 : Petr}. Функция должна возвращать результирующий массив.
 
-let a7 = [{ id : 23, name: 'Ivan'}, {id: 45, name : 'Petr'}];
+let a7 = [{ id: 23, name: 'Ivan' }, { id: 45, name: 'Petr' }];
 
 function f7() {
 
 }
 
-document.querySelector('.b-7').addEventListener('click', ()=>{
+document.querySelector('.b-7').addEventListener('click', () => {
     console.log(f7());
 });
 
@@ -80,26 +92,26 @@ document.querySelector('.b-7').addEventListener('click', ()=>{
 // Task 8
 //При нажатии .b-8 выполняете функцию f8. Функция должна переиндексировать массив a8. Что имеется ввиду. Сейчас у нас обычный массив, который содержит вложенные объекты. Вам необходимо сделать из a8 массив, который будет содержать только числовые id. Т.е. [23, 45]. Функция должна возвращать результирующий массив.
 
-let a8 = [ { id : 23, name: 'Ivan'}, {id: 45, name : 'Petr'}];
+let a8 = [{ id: 23, name: 'Ivan' }, { id: 45, name: 'Petr' }];
 
 function f8() {
 
 }
 
-document.querySelector('.b-8').addEventListener('click', ()=>{
+document.querySelector('.b-8').addEventListener('click', () => {
     console.log(f8());
 });
 
 // Task 9
 //При нажатии .b-9 выполняете функцию f9. Функция должна возвращать в out-9 самый большой индекс из вложенных в a9 массивов. В данном случае это 4. Т.е. самый большой вложенный массив это [0,0,0,0,0], а в нем самый большой индекс 4.
 
-let a9 = [ [4,3,2], [2,5], [0,0,0,0,0]];
+let a9 = [[4, 3, 2], [2, 5], [0, 0, 0, 0, 0]];
 
 function f9() {
 
 }
 
-document.querySelector('.b-9').addEventListener('click', ()=>{
+document.querySelector('.b-9').addEventListener('click', () => {
     document.querySelector('.out-9').innerHTML = f9();
 });
 
@@ -120,8 +132,8 @@ document.querySelector('.b-10').addEventListener('click', () => {
 //При нажатии .b-11 выполняете функцию f11. Функция должна c помощью for in перебрать объект a11 и вывести в out-11 только те значения, которые больше 10. Вывод - через пробел.
 
 let a11 = {
-    one : 11,
-    two : 7,
+    one: 11,
+    two: 7,
     three: 13,
     four: 0
 }
@@ -135,7 +147,7 @@ document.querySelector('.b-11').addEventListener('click', f11);
 // Task 12
 //При нажатии .b-12 выполняете функцию f12. Функция должна c помощью for of перебрать a12 и вывести в out-12 через пробел.
 
-let a12 = [4,5,6,7];
+let a12 = [4, 5, 6, 7];
 
 function f12() {
 
@@ -160,7 +172,7 @@ document.querySelector('.b-13').addEventListener('click', f13);
 // Task 14
 //При нажатии .b-14 выполняете функцию f14. Функция должна c помощью for of перебрать a14 и вывести по элементам в out-14 через пробел.
 
-let a14 = new Set([4,5,6]);
+let a14 = new Set([4, 5, 6]);
 
 function f14() {
 
