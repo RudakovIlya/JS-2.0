@@ -75,6 +75,9 @@ let s5 = new Set(["a", "b", "c", "z", "a2", "b2", "c2", "z2"]);
 
 const f5 = () => {
 
+  const out = document.querySelector('.out-5');
+
+  out.textContent = s5.size;
 
 };
 
