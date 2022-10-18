@@ -67,6 +67,10 @@ let a4 = [4, "3", 6, 7, "12", 34, "56", 78, 90, 11];
 
 function t4() {
 
+    a4.map(item => typeof item == 'number' ? a4_res.push(item) : null)
+
+    return a4_res;
+
 }
 
 document.querySelector('.b-4').onclick = () => {
