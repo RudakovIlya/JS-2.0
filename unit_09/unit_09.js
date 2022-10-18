@@ -125,6 +125,14 @@ document.querySelector('.b-7').onclick = t7;
 
 function t8() {
 
+    const a8 = [1, 2, 66, 77, 15];
+
+    const out = document.querySelector('.out-8');
+
+    a8_res = a8.join('-');
+
+    out.textContent = a8_res;
+
 }
 
 document.querySelector('.b-8').onclick = t8;
