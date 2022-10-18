@@ -123,6 +123,10 @@ let b7 = ["php-7", "html", "css", 92, "6", "5", "hello", 32];
 
 function t7() {
 
+    b7_res = b7.filter(item => item.length > 3);
+
+    return b7_res;
+
 }
 
 document.querySelector('.b-7').onclick = () => {
