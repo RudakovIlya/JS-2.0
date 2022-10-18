@@ -84,10 +84,15 @@ document.querySelector('.div-5').addEventListener('dblclick', t5);
 
 function t6() {
 
+	const ul = document.querySelector('.ul-6');
+
+	ul.classList.toggle('hide');
+
 }
 
 // ваше событие здесь!!!
 
+document.querySelector('.div-6').addEventListener('dblclick', t6);
 
 // Task 7 ============================================
 /*  Дан блок .div-7. При клике правой кнопкой мыши на блоке добавляйте ему класс .active. При повторном клике - удаляйте. */
