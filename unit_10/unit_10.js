@@ -268,9 +268,11 @@ document.querySelector(".b-17_off").addEventListener('click', t17Off);
 
 function t18() {
 
+	this.textContent = this.offsetWidth;
+
 }
 // ваше событие здесь!!!
-
+document.querySelector('.div-18').addEventListener('mouseenter', t18);
 // Task 19 ============================================
 /*  Дан блок div-19. Напишите фукнцию t19 которая выводит в данный блок его классы при событии onmouseout. */
 
