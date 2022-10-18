@@ -291,5 +291,17 @@ document.querySelector('.div-19').addEventListener('mouseout', t19);
 
 function t20() {
 
+	let p = this.value;
+
+	p++;
+
+	const out = document.querySelector('.out-20');
+
+	this.value = p;
+
+	out.textContent = this.value;
+
 }
 // ваше событие здесь!!!
+
+document.querySelector('progress').addEventListener('mousemove', t20);
