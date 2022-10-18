@@ -86,6 +86,10 @@ let b1 = [3, 14, 15, 92];
 
 function t5() {
 
+    b1_res = b1.filter(item => item % 2 === 0);
+
+    return b1_res;
+
 }
 
 document.querySelector('.b-5').onclick = () => {
