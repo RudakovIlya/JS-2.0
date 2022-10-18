@@ -161,6 +161,13 @@ document.querySelector('.b-9').onclick = t9;
 
 function t10() {
 
+    const a10 = { name: 'ivan', age: 15, sex: 1, id: 45 };
+
+    a10_res = Object.entries(a10).map(item => `${item[0]}=${item[1]}`).join('&')
+
+    const out = document.querySelector('.out-10');
+
+    out.textContent = a10_res;
 }
 
 document.querySelector('.b-10').onclick = t10;
