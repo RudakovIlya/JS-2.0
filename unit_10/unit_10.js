@@ -154,9 +154,15 @@ document.querySelector('.div-9').addEventListener('contextmenu', (e) => {
 
 function t10() {
 
+	const img = document.querySelector('.div-10 img');
+
+	img.src = `img/${2}.png`
+
 }
 
 // ваше событие здесь!!!
+
+document.querySelector('.div-10').addEventListener('mouseenter', t10);
 
 // Task 11 ============================================
 /*  Дан блок .div-11. Внутри блока - изображение 1.png. При наведении мыши (mouseenter)  - меняйте изображение на 2.png. При уведении мыши - mouseleave - возвращайте исходное изображение. */
