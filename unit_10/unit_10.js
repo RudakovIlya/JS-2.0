@@ -209,14 +209,17 @@ function t13_1() {
 
 // ваше событие здесь!!!
 document.querySelector('.div-13').addEventListener('mousedown', t13);
+
 document.querySelector('.div-13').addEventListener('mouseup', t13_1);
 // Task 14 ============================================
 /*  Дан блок .div-14. При нажатии кнопки b-14 добавляйте к нему событие onclick - которое, при клике добавляем блоку div-14 класс active. */
 
-//function t14() {
+function t14() {
 
-//}
-//document.querySelector('t-14').onclick = t14;
+	document.querySelector('.div-14').classList.toggle('active');
+
+}
+document.querySelector('.b-14').onclick = t14;
 
 
 // Task 15 ============================================
