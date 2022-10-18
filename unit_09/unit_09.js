@@ -78,6 +78,8 @@ document.querySelector('.b-4').onclick = t4;
 
 function t5() {
 
+    a5_res.push(this.getAttribute('data'))
+    console.log(a5_res);
 }
 
 document.querySelectorAll('.task-5').forEach(elem => {
