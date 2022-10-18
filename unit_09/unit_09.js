@@ -60,6 +60,14 @@ document.querySelector('.b-3').onclick = t3;
 
 function t4() {
 
+    const span = document.querySelectorAll('.task-4');
+
+    span.forEach(item => a4_res.push(item.getAttribute('data')));
+
+    const out = document.querySelector('.out-4');
+
+    out.textContent = a4_res.join(' ');
+
 }
 
 document.querySelector('.b-4').onclick = t4;
