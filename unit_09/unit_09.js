@@ -42,6 +42,14 @@ document.querySelector('.b-2').onclick = t2;
 
 function t3() {
 
+    const a3 = [2, 'hello', 3, 'hi', 4, 'Mazai'];
+
+    const out = document.querySelector('.out-3');
+
+    a3.forEach(item => typeof item == 'number' ? a3_res.push(item) : null)
+
+    out.textContent = a3_res.join('=+=')
+
 }
 
 document.querySelector('.b-3').onclick = t3;
