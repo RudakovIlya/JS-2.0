@@ -160,6 +160,8 @@ let b9 = [3, "hello", 4, "world", 5, "hi"];
 
 function t9() {
 
+    b9.filter(item => typeof item === 'string' ? b9_string.push(item) : b9_num.push(item));
+
     return [b9_num, b9_string];
 }
 
