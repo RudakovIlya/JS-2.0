@@ -24,6 +24,14 @@ document.querySelector('.b-1').onclick = t1;
 
 function t2() {
 
+    let a1 = [2, 3, 4, 5, 10, 11, 12];
+
+    const out = document.querySelector('.out-2');
+
+    a1.forEach(item => a2_res.push(item / 2));
+
+    out.innerHTML = a2_res;
+
 }
 
 document.querySelector('.b-2').onclick = t2;
