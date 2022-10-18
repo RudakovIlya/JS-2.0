@@ -40,10 +40,18 @@ let w3 = 75;
 
 function t3() {
 
+	const out = document.querySelector('.out-3');
+
+	this.style.width = w3 + 'px';
+
+	w3 += 5;
+
+	out.textContent = this.style.width;
 }
 
 // ваше событие здесь!!!
 
+document.querySelector('.div-3').addEventListener('click', t3);
 
 // Task 4 ============================================
 /*  Добавьте на блок .div-4 событие двойной клик и по двойному клику запуск функции t4. Функция должна возвращать и выводить на экран содержимое блока (только текст). Вывод осуществляется в out-4. */
@@ -146,10 +154,10 @@ function t11() {
 // Task 14 ============================================
 /*  Дан блок .div-14. При нажатии кнопки b-14 добавляйте к нему событие onclick - которое, при клике добавляем блоку div-14 класс active. */
 
-function t14() {
+//function t14() {
 
-}
-document.querySelector('t-14').onclick = t14;
+//}
+//document.querySelector('t-14').onclick = t14;
 
 
 // Task 15 ============================================
