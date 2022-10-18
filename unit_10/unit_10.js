@@ -58,10 +58,16 @@ document.querySelector('.div-3').addEventListener('click', t3);
 
 function t4() {
 
+	const out = document.querySelector('.out-4');
+
+	out.textContent = this.textContent;
+
+	return this.textContent;
+
 }
 
 // ваше событие здесь!!!
-
+document.querySelector('.div-4').addEventListener('dblclick', t4);
 // Task 5 ============================================
 /*  Дан блок .div-5.active. Добавьте на него событие двойной клик, по которому удалется класс active если он есть и добавляется если такого класса нет. */
 
