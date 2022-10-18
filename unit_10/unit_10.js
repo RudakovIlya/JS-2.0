@@ -116,10 +116,19 @@ document.querySelector('.div-7').addEventListener('contextmenu', function (e) {
 
 function t8() {
 
+	const ch = document.querySelector('.ch-8');
+
+	if (ch.checked) {
+		document.oncontextmenu = () => false;
+	} else {
+		document.oncontextmenu = () => true;
+	}
+
 }
 
 // ваше событие здесь!!!
 
+document.querySelector('.ch-8').addEventListener('change', t8);
 
 // Task 9 ============================================
 /*  Дан блок .div-9. Внутри блока - изображение 1.png. При клике правой кнопкой мыши  - меняйте изображение на 2.png. Надеюсь вы догадаетесь изменить только src изображения? */
