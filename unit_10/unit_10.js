@@ -278,9 +278,13 @@ document.querySelector('.div-18').addEventListener('mouseenter', t18);
 
 function t19() {
 
+	this.textContent = this.classList;
+
 }
+
 // ваше событие здесь!!!
 
+document.querySelector('.div-19').addEventListener('mouseout', t19);
 
 // Task 20 ============================================
 /*  Дан элемент progress. Напишите фукнцию t20 которая увеличивает его value на 1 при каждом событии mousemove внутри progress. */
