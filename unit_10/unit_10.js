@@ -135,10 +135,19 @@ document.querySelector('.ch-8').addEventListener('change', t8);
 
 function t9() {
 
+	const img = document.querySelector('.div-9 img');
+
+	img.src = `img/${1 ? 2 : 1}.png`
+
 }
 
 // ваше событие здесь!!!
 
+document.querySelector('.div-9').addEventListener('contextmenu', (e) => {
+	e.preventDefault();
+
+	t9()
+});
 
 // Task 10 ============================================
 /*  Дан блок .div-10. Внутри блока - изображение 1.png. При наведении мыши (mouseenter)  - меняйте изображение на 2.png. */
