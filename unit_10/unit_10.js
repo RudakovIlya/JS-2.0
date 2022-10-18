@@ -254,14 +254,15 @@ document.querySelector('.div-16').addEventListener('mousemove', t16);
 /*  Дано две кнопки - b-17_on и b-17_off. Напишите фукнции t17On и t17Off которые включают и отключают событие move в задании 16. */
 
 function t17On() {
-
+	document.querySelector(".div-16").addEventListener('mousemove', t16);
 }
 function t17Off() {
-
+	document.querySelector(".div-16").removeEventListener('mousemove', t16);
 }
 // ваше событие здесь!!!
 // ваше событие здесь!!!
-
+document.querySelector(".b-17_on").addEventListener('click', t17On);
+document.querySelector(".b-17_off").addEventListener('click', t17Off);
 // Task 18 ============================================
 /*  Дан блок div-18. Напишите фукнцию t18 которая выводит в данный блок его ширину при событии onmouseenter. */
 
