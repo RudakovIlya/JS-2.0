@@ -140,6 +140,11 @@ let b8 = [3, 14, 15, 92, "6", "5", "hello", 32];
 
 function t8() {
 
+
+    b8_res = b8.filter((item, i) => item % 2 == 0 ? i : null);
+
+    return b8_res;
+
 }
 
 document.querySelector('.b-8').onclick = () => {
