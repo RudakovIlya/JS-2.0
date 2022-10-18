@@ -143,6 +143,14 @@ document.querySelector('.b-8').onclick = t8;
 
 function t9() {
 
+    const a9 = [['hi', 'mahai'], ['test', 'best']];
+
+    const out = document.querySelector('.out-9');
+
+    a9_res = a9.map(item => item.join('-')).join('-');
+
+    out.textContent = a9_res;
+
 }
 
 document.querySelector('.b-9').onclick = t9;
