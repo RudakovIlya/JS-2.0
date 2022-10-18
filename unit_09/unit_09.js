@@ -78,7 +78,8 @@ document.querySelector('.b-4').onclick = t4;
 
 function t5() {
 
-    a5_res.push(this.getAttribute('data'))
+    a5_res.push(this.getAttribute('data'));
+
     console.log(a5_res);
 }
 
@@ -92,7 +93,13 @@ document.querySelectorAll('.task-5').forEach(elem => {
 /*  Дана строка str6='helloworld' - преобразуйте ее в массив и присвойте a6_res. Выведите на страницу. Запускаться решение должно при вызове функции t6. */
 
 function t6() {
+    const str6 = 'helloworld';
 
+    a6_res = str6.split('');
+
+    const out = document.querySelector('.out-6');
+
+    out.innerHTML = a6_res;
 }
 
 document.querySelector('.b-6').onclick = t6;
