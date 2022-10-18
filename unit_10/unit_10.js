@@ -227,9 +227,12 @@ document.querySelector('.b-14').onclick = t14;
 
 function t15() {
 
+	this.textContent = +this.textContent + 1;
+
 }
 // ваше событие здесь!!!
 
+document.querySelector('.div-15').addEventListener('mousemove', t15);
 
 // Task 16 ============================================
 /*  Дан блок .div-16. Добавьте на него событие move. При каждом движении мыши увеличивайте ширину блока на 1px. */
