@@ -99,9 +99,17 @@ document.querySelector('.div-6').addEventListener('dblclick', t6);
 
 function t7() {
 
+	document.querySelector('.div-7').classList.toggle('active');
+
 }
 
 // ваше событие здесь!!!
+
+document.querySelector('.div-7').addEventListener('contextmenu', function (e) {
+	e.preventDefault();
+
+	t7()
+});
 
 // Task 8 ============================================
 /*  Дано checkbox .ch-8. Повесьте на него событие onchange при котором на документе отключается клик правой кнопкой мыши если checkbox выбран и отключает если не выбран. */
