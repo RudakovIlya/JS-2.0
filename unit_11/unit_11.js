@@ -3,9 +3,16 @@
 /* Дан input .i-1. Напишите функцию t1, которая выводит в .out-1 символ и возвращает его. Во всех последующих задачах - работаем с латиницей и цифрами.*/
 
 function t1() {
+    const out = document.querySelector('.out-1');
+
+    const iq = document.querySelector('.i-1').value;
+
+    out.textContent = iq;
 }
 
 // ваше событие здесь!!!
+
+document.querySelector('.i-1').addEventListener("keyup", t1);
 
 // Task 2 ============================================
 /*  Дан input .i-2. Напишите функцию t2, которая выводит в .out-2 код символа и возвращает его. */
