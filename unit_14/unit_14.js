@@ -94,15 +94,19 @@ document.querySelector('.b-5').addEventListener('click', t5)
 
 function t6() {
 
+	localStorage.clear();
+
 }
 
 // ваше событие здесь!!!
-
+document.querySelector('.b-6').addEventListener('click', t6)
 
 // Task 7 ============================================
 /*  Создайте input i-7 куда пользователь может вводить числа и строки. Создайте массив a7. Когда пользователь нажимает кнопку b-7 число должно добавляться в массив. Массив должен сохраняться в LS с ключем a7.*/
 
 function t7() {
+
+	const iq = document.querySelector('.i-7');
 
 }
 
