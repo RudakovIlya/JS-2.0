@@ -17,12 +17,21 @@ document.querySelector('.i-1').addEventListener("keyup", t1);
 // Task 2 ============================================
 /*  Дан input .i-2. Напишите функцию t2, которая выводит в .out-2 код символа и возвращает его. */
 
-function t2() {
+function t2(e) {
+
+    const out = document.querySelector('.out-2');
+
+    out.textContent = e.code;
 
 }
 
 // ваше событие здесь!!!
 
+document.querySelector('.i-2').addEventListener('keyup', (e) => {
+
+    t2(e);
+
+});
 
 // Task 3 ============================================
 /*  Дан input .i-3. Напишите функцию t3, которая выводит на страницу true если введен символ и false если цифра. Для определения - используйте код клавиши. */
@@ -114,6 +123,3 @@ function t10() {
 function t11() {
 
 }
-
-// ваше событие здесь!!!
-
