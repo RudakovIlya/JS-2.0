@@ -97,10 +97,12 @@ div4.addEventListener('touchend', t6)
 
 function t7() {
 
+	this.style.backgroundColor = 'red';
+
 }
 
 // ваше событие здесь!!!
-
+document.querySelector('.div-7').addEventListener('touchmove', t7);
 // Task 8 ============================================
 /*  Дан блок div-8. Добавьте на него событие touch, которое при срабатывании окрашивает блок случаным цветом из массива a8=[red, green, blue, orange, pink, yellow] */
 
