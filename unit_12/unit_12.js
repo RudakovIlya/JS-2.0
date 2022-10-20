@@ -57,7 +57,7 @@ function t4() {
 
 		const out = document.querySelector('.out-4');
 
-		out.textContent = 'touch';
+		out.textContent += 'touch';
 
 	}
 }
@@ -67,12 +67,16 @@ button4.addEventListener('click', t4)
 // Task 5 ============================================
 /*  Дана кнопка b-5. При ее нажатии очищайте событие ontouchstart на блоке div-4. */
 
+const b5 = document.querySelector('.b-5');
+
 function t5() {
+
+	div4.ontouchstart = null;
 
 }
 
 // ваше событие здесь!!!
-
+b5.addEventListener('click', t5)
 // Task 6 ============================================
 /*  Добавьте событие ontouchend на div-4. При его срабатывании выведите в out-6 слово touchend. */
 
