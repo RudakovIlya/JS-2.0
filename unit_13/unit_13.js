@@ -81,7 +81,7 @@ document.querySelector('.b-3').onclick = t3;
 // Дана переменная a. В переменную делается push. Используя try catch отловите ошибки если они есть. Если ошибка вывести в out-4 число 0. Если не ошибка - то результирующий массив через пробел.
 
 let a = [2, 3, 4];
-a = 5;
+//a = 5;
 
 function t4() {
 
@@ -108,8 +108,26 @@ document.querySelector('.b-4').onclick = t4;
 // Добавьте try, catch, finnaly так, чтобы в out-5 выводился 0 при ошибки. А в out-5-1 всегда выводилось слово 'finnaly';
 
 function t5() {
+
     let p = document.querySelectorAll('p');
-    p.push(3);
+
+    try {
+
+        p.push(3);
+
+    } catch (error) {
+
+        const out = document.querySelector('.out-5');
+
+        out.textContent = 0;
+
+    } finally {
+
+        const out = document.querySelector('.out-5-1');
+
+        out.textContent = 'finnaly';
+
+    }
 }
 
 document.querySelector('.b-5').onclick = t5;
