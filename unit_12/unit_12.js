@@ -1,10 +1,12 @@
 
 // Task 1 ============================================
-/* Создайте блок div-1. Добавьте на него событие touchstart. Выведите в out-1 слово  touch если событие сработает. */
+/* Создайте блок div-1. Добавьте на него событие touchstart. Выведите в out-1 слово touch если событие сработает. */
 
-function t1() {
+function t1(e) {
 
+	const out = document.querySelector('.out-1');
 
+	out.textContent = 'event' + e;
 
 }
 
