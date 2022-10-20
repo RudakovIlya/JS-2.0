@@ -81,10 +81,24 @@ document.querySelector('.b-3').onclick = t3;
 // Дана переменная a. В переменную делается push. Используя try catch отловите ошибки если они есть. Если ошибка вывести в out-4 число 0. Если не ошибка - то результирующий массив через пробел.
 
 let a = [2, 3, 4];
-// a = 5;
+a = 5;
 
 function t4() {
+
     a.push(7);
+
+    const out = document.querySelector('.out-4');
+
+    try {
+
+        out.textContent = a.join(' ');
+
+    } catch (error) {
+
+        out.textContent = 0;
+
+    }
+
 }
 
 document.querySelector('.b-4').onclick = t4;
