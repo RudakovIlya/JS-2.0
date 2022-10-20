@@ -82,10 +82,15 @@ b5.addEventListener('click', t5)
 
 function t6() {
 
+	const out = document.querySelector('.out-6');
+
+	out.textContent += 'touchend' + ' ';
+
 }
 
 // ваше событие здесь!!!
 
+div4.addEventListener('touchend', t6)
 
 // Task 7 ============================================
 /*  Дан блок div-7. Добавьте событие touch, при срабатывании которого окрашивайте блок в красный цвет. */
