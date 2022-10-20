@@ -58,19 +58,37 @@ document.querySelector('.b-3').addEventListener('click', t3)
 
 function t4() {
 
+	localStorage.setItem('a4', JSON.stringify({ 'hello': 'world', 'hi': 'mahai' }));
+
 }
 
 // ваше событие здесь!!!
-
+document.querySelector('.b-4').addEventListener('click', t4)
 // Task 5 ============================================
 /*   При нажатии кнопки b-5 выведите из LS сохранненный массив a4. Выведите в out-5 в формате ключ пробел значение перенос строки. */
 
 function t5() {
 
+	let parse = (localStorage.getItem('a4'));
+
+	parse = JSON.parse(parse);
+
+	const out = document.querySelector('.out-5');
+
+	let str = '';
+
+	for (let key in parse) {
+
+		str += `${key} ${parse[key]}<br>`
+
+	}
+
+	out.innerHTML = str;
+
 }
 
 // ваше событие здесь!!!
-
+document.querySelector('.b-5').addEventListener('click', t5)
 // Task 6 ============================================
 /*  Создайте функцию t6 которая очищает весь LS. Запуск по кнопке b-6*/
 
