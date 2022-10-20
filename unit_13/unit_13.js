@@ -56,7 +56,23 @@ document.querySelector('.b-2').onclick = t2;
 function t3() {
     let a = 4;
     let b = 5;
-    document.querySelector('.out-3').innerHTML = a * b;
+
+    try {
+        document.querySelector('.out-3').innerHTML = a * b;
+    } catch (error) {
+
+        console.log(error);
+
+        const div = document.createElement('div');
+
+        div.classList.add('out-3');
+
+        div.textContent = a * b;
+
+        document.querySelector('.b-3').after(div);
+
+    }
+
 }
 
 document.querySelector('.b-3').onclick = t3;
