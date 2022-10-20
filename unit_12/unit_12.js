@@ -125,17 +125,22 @@ function t8(e) {
 
 // ваше событие здесь!!!
 
-document.querySelector('.div-8').addEventListener('touchmove', t8);
+document.querySelector('.div-8').addEventListener('touchstart', t8);
 
 // Task 9 ============================================
 /* Дан блок div-9. Добавьте событие ontouch. Выводите количество одновременных касаний в out-9. */
 
-function t9() {
+function t9(e) {
+
+	const out = document.querySelector('.out-9');
+
+	out.textContent = e.touches.length;
 
 }
 
 // ваше событие здесь!!!
 
+document.querySelector('.div-9').addEventListener('touchstart', t9)
 
 // Task 10 ============================================
 /*  Дан блок div-10. Добавьте на него событие touchmove. При срабатывании события - увеличивайте его ширину на 1. */
