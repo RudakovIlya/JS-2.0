@@ -123,8 +123,12 @@ document.querySelector('.b-7').addEventListener('click', t7)
 
 function t8() {
 
+	arr.pop();
+
+	localStorage.setItem('a7', arr);
+
 }
 
 // ваше событие здесь!!!
-
+document.querySelector('.b-8').addEventListener('click', t8)
 
