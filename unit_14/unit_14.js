@@ -19,7 +19,7 @@ let a2 = [7, 6, 5]
 
 function t2() {
 
-	localStorage.setItem('a2', [7, 6, 5])
+	localStorage.setItem('a2', JSON.stringify([7, 6, 5]))
 
 }
 
@@ -32,10 +32,26 @@ document.querySelector('.b-2').addEventListener('click', t2)
 
 function t3() {
 
+	const out = document.querySelector('.out-3');
+
+	let d = localStorage.getItem('a2');
+
+	d = JSON.parse(d);
+
+	let str = '';
+
+	for (const key in d) {
+
+		str += `${key} ${d[key]}<br>`
+
+	}
+
+	out.innerHTML = str;
 }
 
 // ваше событие здесь!!!
 
+document.querySelector('.b-3').addEventListener('click', t3)
 
 // Task 4 ============================================
 /*  Создайте функцию t4 которая записывает  в LS  массив a4 = {hello: world, hi:mahai}. Ключ a4. Проверьте что происходит при повторном вызове функции. Запускается ф-я по кнопкуе b-4.*/
