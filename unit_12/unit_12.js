@@ -106,12 +106,26 @@ document.querySelector('.div-7').addEventListener('touchstart', t7);
 // Task 8 ============================================
 /*  Дан блок div-8. Добавьте на него событие touch, которое при срабатывании окрашивает блок случаным цветом из массива a8=[red, green, blue, orange, pink, yellow] */
 
-function t8() {
+const getRandomNum = (min, max) => {
+
+	min = Math.ceil(min);
+
+	max = Math.floor(max);
+
+	return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
+const a8 = ["red", "green", "blue", "orange", "pink", "yellow"];
+
+function t8(e) {
+
+	e.target.style.backgroundColor = a8[getRandomNum(0, a8.length - 1)];
 
 }
 
 // ваше событие здесь!!!
 
+document.querySelector('.div-8').addEventListener('touchmove', t8);
 
 // Task 9 ============================================
 /* Дан блок div-9. Добавьте событие ontouch. Выводите количество одновременных касаний в out-9. */
