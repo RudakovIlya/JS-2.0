@@ -180,21 +180,75 @@ document.querySelector('.div-11').addEventListener('touchmove', t11);
 */
 
 const images = document.querySelectorAll('.img-12-min');
+
 let count = 0; // переменная, которая указывает на номер активного изображения в images
 
-const next = document.querySelectorAll('.next');
-next.onclick = nextFunction;
+const imgchange = document.querySelector('.img-12-max');
 
-const prev = document.querySelectorAll('.prev');
-prev.onclick = prevFunction;
+const next = document.querySelector('.next');
+//next.addEventListener('click', nextFunction)
+next.addEventListener('touchstart', nextFunction)
+
+const prev = document.querySelector('.prev');
+//prev.addEventListener('click', prevFunction)
+prev.addEventListener('touchstart', prevFunction)
+
+const resetBtn = document.querySelector('.reset');
+
+resetBtn.addEventListener('touchstart', resetFunction)
+
+function setImg() {
+
+	for (let i = 0; i < images.length; i++) {
+
+		images[i].classList.remove('active-img');
+
+		images[count].classList.add('active-img');
+
+		imgchange.src = `img/${count + 1}.png`
+
+	}
+
+}
 
 function nextFunction() {
 
+	if (count == images.length - 1) {
+
+		count = 0;
+
+	} else {
+
+		count++;
+
+	}
+
+	setImg();
 }
 
 function prevFunction() {
 
+	if (count > 0) {
+
+		count--;
+
+	} else {
+
+		count = images.length - 1;
+
+	}
+
+	setImg();
+
 }
 
+function resetFunction() {
+
+	count = 0;
+
+	setImg();
+
+}
 
 // ваше событие здесь!!!
+
