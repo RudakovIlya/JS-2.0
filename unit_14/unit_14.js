@@ -109,9 +109,7 @@ let arr = [];
 function t7() {
 
 	const iq = document.querySelector('.i-7').value;
-
 	arr.push(iq);
-
 	localStorage.setItem('a7', arr);
 
 }
@@ -122,11 +120,8 @@ document.querySelector('.b-7').addEventListener('click', t7)
 /*   Создайте функцию t8 при запуске которой из a7 удаляется последний элемент. После чего массив сохраняется в LS с ключем a7. Использовать массив из предыдущего задания. */
 
 function t8() {
-
 	arr.pop();
-
 	localStorage.setItem('a7', arr);
-
 }
 
 // ваше событие здесь!!!
