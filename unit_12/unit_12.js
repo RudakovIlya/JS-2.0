@@ -1,13 +1,10 @@
-
 // Task 1 ============================================
 /* Создайте блок div-1. Добавьте на него событие touchstart. Выведите в out-1 слово touch если событие сработает. */
 
 function t1() {
+    const out = document.querySelector('.out-1');
 
-	const out = document.querySelector('.out-1');
-
-	out.textContent = 'event';
-
+    out.textContent = 'event';
 }
 
 // ваше событие здесь!!!
@@ -18,12 +15,9 @@ document.querySelector('.div-1').addEventListener('touchstart', t1);
 /* Создайте блок div-2. Добавьте на него событие touchstart. Выведите в out-2 число срабатываний события. */
 
 function t2(event) {
+    const out = document.querySelector('.out-2');
 
-	const out = document.querySelector('.out-2');
-
-	out.textContent = event.touches.length;
-
-
+    out.textContent = event.touches.length;
 }
 
 // ваше событие здесь!!!
@@ -34,11 +28,10 @@ document.querySelector('.div-2').addEventListener('touchstart', t2);
 /*  Создайте блок div-3_1 и div-3_2. Добавьте на них событие touchstart. Выведите в out-3 номер блока 1 или 2 на котором сработало событие. */
 
 function t3(event) {
+    const out = document.querySelector('.out-3');
 
-	const out = document.querySelector('.out-3');
-
-	out.textContent = event.target == document.querySelector('.div-3_1') ? 1 : 2;
-
+    out.textContent =
+        event.target == document.querySelector('.div-3_1') ? 1 : 2;
 }
 
 // ваше событие здесь!!!
@@ -53,52 +46,44 @@ const div4 = document.querySelector('.div-4');
 const button4 = document.querySelector('.b-4');
 
 function t4() {
-	div4.ontouchstart = () => {
+    div4.ontouchstart = () => {
+        const out = document.querySelector('.out-4');
 
-		const out = document.querySelector('.out-4');
-
-		out.textContent += 'touch';
-
-	}
+        out.textContent += 'touch';
+    };
 }
 
 // ваше событие здесь!!!
-button4.addEventListener('click', t4)
+button4.addEventListener('click', t4);
 // Task 5 ============================================
 /*  Дана кнопка b-5. При ее нажатии очищайте событие ontouchstart на блоке div-4. */
 
 const b5 = document.querySelector('.b-5');
 
 function t5() {
-
-	div4.ontouchstart = null;
-
+    div4.ontouchstart = null;
 }
 
 // ваше событие здесь!!!
-b5.addEventListener('click', t5)
+b5.addEventListener('click', t5);
 // Task 6 ============================================
 /*  Добавьте событие ontouchend на div-4. При его срабатывании выведите в out-6 слово touchend. */
 
 function t6() {
+    const out = document.querySelector('.out-6');
 
-	const out = document.querySelector('.out-6');
-
-	out.textContent += 'touchend' + ' ';
-
+    out.textContent += 'touchend' + ' ';
 }
 
 // ваше событие здесь!!!
 
-div4.addEventListener('touchend', t6)
+div4.addEventListener('touchend', t6);
 
 // Task 7 ============================================
 /*  Дан блок div-7. Добавьте событие touch, при срабатывании которого окрашивайте блок в красный цвет. */
 
 function t7(e) {
-
-	e.target.style.backgroundColor = 'red';
-
+    e.target.style.backgroundColor = 'red';
 }
 
 // ваше событие здесь!!!
@@ -107,20 +92,17 @@ document.querySelector('.div-7').addEventListener('touchstart', t7);
 /*  Дан блок div-8. Добавьте на него событие touch, которое при срабатывании окрашивает блок случаным цветом из массива a8=[red, green, blue, orange, pink, yellow] */
 
 const getRandomNum = (min, max) => {
+    min = Math.ceil(min);
 
-	min = Math.ceil(min);
+    max = Math.floor(max);
 
-	max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1) + min);
+};
 
-	return Math.floor(Math.random() * (max - min + 1) + min);
-}
-
-const a8 = ["red", "green", "blue", "orange", "pink", "yellow"];
+const a8 = ['red', 'green', 'blue', 'orange', 'pink', 'yellow'];
 
 function t8(e) {
-
-	e.target.style.backgroundColor = a8[getRandomNum(0, a8.length - 1)];
-
+    e.target.style.backgroundColor = a8[getRandomNum(0, a8.length - 1)];
 }
 
 // ваше событие здесь!!!
@@ -131,16 +113,14 @@ document.querySelector('.div-8').addEventListener('touchstart', t8);
 /* Дан блок div-9. Добавьте событие ontouch. Выводите количество одновременных касаний в out-9. */
 
 function t9(e) {
+    const out = document.querySelector('.out-9');
 
-	const out = document.querySelector('.out-9');
-
-	out.textContent = e.touches.length;
-
+    out.textContent = e.touches.length;
 }
 
 // ваше событие здесь!!!
 
-document.querySelector('.div-9').addEventListener('touchstart', t9)
+document.querySelector('.div-9').addEventListener('touchstart', t9);
 
 // Task 10 ============================================
 /*  Дан блок div-10. Добавьте на него событие touchmove. При срабатывании события - увеличивайте его ширину на 1. */
@@ -148,11 +128,9 @@ document.querySelector('.div-9').addEventListener('touchstart', t9)
 let width = document.querySelector('.div-10').offsetWidth;
 
 function t10() {
+    document.querySelector('.div-10').style.width = width + 'px';
 
-	document.querySelector('.div-10').style.width = width + 'px';
-
-	width += 1;
-
+    width += 1;
 }
 
 // ваше событие здесь!!!
@@ -161,10 +139,9 @@ document.querySelector('.div-10').addEventListener('touchmove', t10);
 /*  Дан блок div-11. Добавьте на него событие touch. При срабатывании выводите радиус события radiusX, radiusY. */
 
 function t11(e) {
+    const out = document.querySelector('.out-11');
 
-	const out = document.querySelector('.out-11');
-
-	out.innerHTML = `radiusX: ${e.targetTouches[0].radiusX}<br> radiusY: ${e.targetTouches[0].radiusY}`
+    out.innerHTML = `radiusX: ${e.targetTouches[0].radiusX}<br> radiusY: ${e.targetTouches[0].radiusY}`;
 }
 
 // ваше событие здесь!!!
@@ -187,68 +164,50 @@ const imgchange = document.querySelector('.img-12-max');
 
 const next = document.querySelector('.next');
 //next.addEventListener('click', nextFunction)
-next.addEventListener('touchstart', nextFunction)
+next.addEventListener('touchstart', nextFunction);
 
 const prev = document.querySelector('.prev');
 //prev.addEventListener('click', prevFunction)
-prev.addEventListener('touchstart', prevFunction)
+prev.addEventListener('touchstart', prevFunction);
 
 const resetBtn = document.querySelector('.reset');
 
-resetBtn.addEventListener('touchstart', resetFunction)
+resetBtn.addEventListener('touchstart', resetFunction);
 
 function setImg() {
+    for (let i = 0; i < images.length; i++) {
+        images[i].classList.remove('active-img');
 
-	for (let i = 0; i < images.length; i++) {
+        images[count].classList.add('active-img');
 
-		images[i].classList.remove('active-img');
-
-		images[count].classList.add('active-img');
-
-		imgchange.src = `img/${count + 1}.png`
-
-	}
-
+        imgchange.src = `img/${count + 1}.png`;
+    }
 }
 
 function nextFunction() {
+    if (count == images.length - 1) {
+        count = 0;
+    } else {
+        count++;
+    }
 
-	if (count == images.length - 1) {
-
-		count = 0;
-
-	} else {
-
-		count++;
-
-	}
-
-	setImg();
+    setImg();
 }
 
 function prevFunction() {
+    if (count > 0) {
+        count--;
+    } else {
+        count = images.length - 1;
+    }
 
-	if (count > 0) {
-
-		count--;
-
-	} else {
-
-		count = images.length - 1;
-
-	}
-
-	setImg();
-
+    setImg();
 }
 
 function resetFunction() {
+    count = 0;
 
-	count = 0;
-
-	setImg();
-
+    setImg();
 }
 
 // ваше событие здесь!!!
-

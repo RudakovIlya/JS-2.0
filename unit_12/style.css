@@ -1,40 +1,40 @@
 .container {
-    width: 100%;
+  width: 100%;
 }
 
 section {
-    margin-bottom: 15px;
-    padding-bottom: 15px;
-    border-bottom: 1px dashed #444;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px dashed #444;
 }
 
 .block {
-    width: 75px;
-    height: 75px;
-    margin: 25px;
-    border: 2px solid #333;
+  width: 75px;
+  height: 75px;
+  margin: 25px;
+  border: 2px solid #333;
 }
 
 .active {
-    background: orange;
+  background: orange;
 }
 
 .hide {
-    display: none;
+  display: none;
 }
 
 .img-12-min {
-    width: 64px;
-    transition: all 0.3s ease 0s;
+  width: 64px;
+  transition: all 0.3s ease 0s;
 }
 
 .img-12-max {
-    width: 128px;
-    border: 3px solid #fff;
+  width: 128px;
+  border: 3px solid #fff;
 }
 
 .active-img {
-    border: 3px solid orange;
-    border-radius: 5px;
-    transition: all 0.3s ease 0s;
+  border: 3px solid orange;
+  border-radius: 5px;
+  transition: all 0.3s ease 0s;
 }
